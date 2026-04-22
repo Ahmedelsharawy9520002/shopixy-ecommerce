@@ -1,0 +1,101 @@
+/* Utilities for ProductListing */
+.py-40 { padding-top: 40px; padding-bottom: 40px; }
+.p-20 { padding: 20px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.ml-10 { margin-left: 10px; }
+
+.layout-sidebar-main {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+@media (min-width: 768px) {
+  .layout-sidebar-main {
+    flex-direction: row;
+  }
+}
+
+.filters-sidebar {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .filters-sidebar {
+    flex: 0 0 240px;
+    height: max-content;
+    position: sticky;
+    top: 72px;
+  }
+}
+
+.filters-title {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 10px;
+}
+
+.filter-group {
+  margin-bottom: 20px;
+}
+
+.filter-subtitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.filter-list li {
+  margin-bottom: 8px;
+}
+
+.filter-list label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.price-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-products {
+  flex: 1;
+}
+
+.products-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px 0;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  border: 1px dashed #d1d5db;
+}
+
+/* Dark mode overrides */
+.dark-mode .filters-title {
+  border-bottom-color: #1e293b;
+}
+
+.dark-mode .empty-state {
+  background-color: #0f172a;
+  border-color: #1e293b;
+}
