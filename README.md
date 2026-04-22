@@ -1,6 +1,6 @@
 # Shopixy E-commerce
 A modern responsive e-commerce website built with a focus on clean UI, smooth user experience, and essential shopping features.
-Live Demo: 
+Live Demo: [https://shopixy.netlify.app/](https://shopixy.netlify.app)
 
 ##  Features
 
